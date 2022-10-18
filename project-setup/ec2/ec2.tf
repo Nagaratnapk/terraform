@@ -5,7 +5,7 @@ resource "aws_spot_instance_request" "spot_worker" {
   vpc_security_group_ids    = [aws_security_group.allows_ssh.id]
 
   tags = {
-    Name = "var.COMPONENT"
+    Name = var.COMPONENT
   }
 
   provisioner "remote-exec" {
