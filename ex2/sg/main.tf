@@ -28,7 +28,7 @@ resource "aws_security_group" "allows_ssh" {
   }
 
   tags = {
-    Name = "allow_ssh_sg"
+    Name = "allows_ssh_sg"
   }
 }
 
