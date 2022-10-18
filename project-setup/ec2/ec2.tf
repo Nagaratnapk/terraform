@@ -1,6 +1,9 @@
 provider "aws" {
     region      = "us-east-1"
 }
+data "aws_availability_zones" "available" {
+  state = "available"
+}
 
 resource "aws_spot_instance_request" "spot_worker" {
   ami                       = data.aws_ami.my_ami.id
