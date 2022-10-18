@@ -1,6 +1,6 @@
 # Creates security group
-resource "aws_security_group" "allows_ssh" {
-  name        = "allows_ssh"
+resource "aws_security_group" "new_ssh" {
+  name        = "new_ssh"
   description = "Allow SSH inbound traffic"
 
   ingress {
@@ -34,5 +34,5 @@ resource "aws_security_group" "allows_ssh" {
 
 
 output "sg_id" {
-    value =  aws_security_group.allows_ssh.id
+    value =  aws_security_group.new_ssh.id
 }
