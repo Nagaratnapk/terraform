@@ -18,7 +18,7 @@ resource "aws_instance" "demo1" {
   }
 
     inline = [
-      "ansible-pull -U https://github.com/Nagaratnapk/ansible.git -e COMPONENT=frontend -e ENV=dev -e APP_VERSION=0.0.2 roboshop-pull.yml",
+      "ansible-pull -U https://github.com/Nagaratnapk/ansible.git -e COMPONENT=frontend -e ENV=dev -e APP_VERSION=0.0.3 roboshop-pull.yml",
     ]
   }
 
